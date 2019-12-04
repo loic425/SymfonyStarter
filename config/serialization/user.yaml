@@ -1,0 +1,30 @@
+Sylius\Component\User\Model\User:
+    attributes:
+        id:
+            expose: true
+            type: integer
+            groups: [Default, Detailed, DetailedCart]
+        username:
+            expose: true
+            type: string
+            groups: [Default, Detailed, DetailedCart, Secured, Write]
+        usernameCanonical:
+            expose: true
+            type: string
+            groups: [Detailed, DetailedCart]
+        email:
+            expose: true
+            type: string
+            groups: [Default, Detailed, DetailedCart, Write]
+        emailCanonical:
+            expose: true
+            type: string
+            groups: [Detailed, DetailedCart]
+        enabled:
+            expose: true
+            type: boolean
+            groups: [Default, Detailed]
+        roles:
+            expose: true
+            type: array
+            groups: [Detailed]

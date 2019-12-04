@@ -1,0 +1,39 @@
+Sylius\Component\Customer\Model\Customer:
+    attributes:
+        id:
+            expose: true
+            type: integer
+            groups: [Default, Detailed, DetailedCart]
+        email:
+            expose: true
+            type: string
+            groups: [Default, Detailed, DetailedCart, Write]
+        emailCanonical:
+            expose: true
+            type: string
+            groups: [Detailed]
+        firstName:
+            expose: true
+            type: string
+            groups: [Default, Detailed, DetailedCart, Write]
+        lastName:
+            expose: true
+            type: string
+            groups: [Default, Detailed, DetailedCart, Write]
+        gender:
+            expose: true
+            type: string
+            groups: [Detailed, Write]
+        birthday:
+            expose: true
+            type: DateTime
+            groups: [Detailed, Write]
+        group:
+            expose: true
+            groups: [Detailed]
+        phoneNumber:
+            expose: true
+            groups: [Write]
+        subscribedToNewsletter:
+            expose: true
+            groups: [Write]
