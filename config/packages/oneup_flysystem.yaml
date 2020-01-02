@@ -1,0 +1,11 @@
+# Read the documentation: https://github.com/1up-lab/OneupFlysystemBundle/tree/master/Resources/doc/index.md
+oneup_flysystem:
+    adapters:
+        avatar_adapter:
+            local:
+                directory: '%kernel.project_dir%/public/media/avatar'
+    filesystems:
+        avatar_filesystem:
+            adapter: avatar_adapter
+            alias: League\Flysystem\Filesystem
+            mount: avatar_image_fs
