@@ -1,3 +1,9 @@
+###> Monofony ###
+### Warning: Remove this composer.lock line from your gitignore
+### to enable adding this file on your project
+composer.lock
+###> Monofony ###
+
 /app/config/parameters.yml
 /build/
 /phpunit.xml
