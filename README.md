@@ -9,7 +9,7 @@
     </a>    
 </h1>
 
-Remove composer.lock form .gitignore file
+Remove composer.lock from the .gitignore file
 Search and replace 'app_name', 'AppName' et 'APP_NAME' with your application name
 
 Installation
