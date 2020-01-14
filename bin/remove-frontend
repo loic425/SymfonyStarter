@@ -1,0 +1,42 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Filesystem\Filesystem;
+
+require dirname(__DIR__).'/vendor/autoload.php';
+
+$filesystem = new Filesystem();
+$projectDir = dirname(__DIR__);
+
+// Remove routes
+$filesystem->remove($projectDir.'/config/routes/frontend');
+
+// redirect homepage to admin dashboard
+$data = <<<EOM
+app_frontend_homepage:
+    path: /
+    defaults:
+        _controller: FrameworkBundle:Redirect:redirect
+        route: app_backend_dashboard
+
+EOM;
+
+file_put_contents($projectDir.'/config/routes/frontend.yaml', $data);
+
+// Remote templates
+$filesystem->remove($projectDir.'/templates/frontend');
+
+// Remove Behat features
+$filesystem->remove($projectDir.'/features/account');
+
+// Remove assets
+$filesystem->remove($projectDir.'/assets/frontend');
+
+$data = <<<EOM
+var backendConfig = require('./assets/backend/webpack.config');
+
+module.exports = [backendConfig];
+
+EOM;
+
+file_put_contents($projectDir.'/webpack.config.js', $data);
