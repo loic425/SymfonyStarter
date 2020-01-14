@@ -19,11 +19,19 @@ Install php dependencies using composer
 $ composer install
 ```
 
-Install project :
+Install project
 ```bash
 $ bin/console app:install
 $ yarn install && yarn build (or "yarn dev" for development usage)
 $ symfony server:start --no-tls
+```
+
+Remove frontend (optional)
+
+When you don't need any frontend on your app with Symfony, this commands remove frontend part of Monofony.
+
+```bash
+$ bin/remove-frontend
 ```
 
 Documentation
