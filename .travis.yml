@@ -19,6 +19,14 @@ matrix:
             services:
                 - memcached
         -
+            sudo: required
+            php: 7.2
+            env:
+                - APP_NAME_SUITE="application_without_frontend"
+                - TRAVIS_NODE_VERSION="7.5"
+            services:
+                - memcached
+        -
             sudo: false
             php: 7.2
             env: APP_NAME_SUITE="docs packages"
