@@ -28,7 +28,9 @@ $ symfony server:start --no-tls
 
 Remove frontend (optional)
 
-When you don't need any frontend on your app with Symfony, this commands remove frontend part of Monofony.
+When building a SPA with Angular/React/VueJs or a mobile app, you may just need the administration panel and/or the API.
+This command basically leaves you only with the admin, protected routes and the API.
+The public part https://monofony.mobizel.com/ here is removed and redirected to the administration panel.
 
 ```bash
 $ bin/remove-frontend
