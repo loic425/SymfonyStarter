@@ -21,7 +21,7 @@ app_frontend_homepage:
 
 EOM;
 
-file_put_contents($projectDir.'/config/routes/frontend.yaml', $data);
+$filesystem->dumpFile($projectDir.'/config/routes/frontend.yaml', $data);
 
 // Remote templates
 $filesystem->remove($projectDir.'/templates/frontend');
@@ -39,4 +39,4 @@ module.exports = [backendConfig];
 
 EOM;
 
-file_put_contents($projectDir.'/webpack.config.js', $data);
+$filesystem->dumpFile($projectDir.'/webpack.config.js', $data);
