@@ -71,6 +71,7 @@
         "psr/event-dispatcher": "^1.0",
         "se/selenium-server-standalone": " ^2.52",
         "symfony/debug-bundle": "4.4.*",
+        "symfony/maker-bundle": "^1.14",
         "symfony/web-profiler-bundle": "4.4.*",
         "vimeo/psalm": "^3.4"
     },

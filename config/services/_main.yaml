@@ -20,6 +20,11 @@ services:
         # fetching services directly from the container via $container->get() won't work
         public: false
 
+        bind:
+            $projectDir: '%kernel.project_dir%'
+            $syliusResources: '%sylius.resources%'
+            $syliusGridFilters: '%sylius.grid.templates.filter%'
+
     _instanceof:
         Sylius\Bundle\ResourceBundle\Controller\ResourceController:
             autowire: false
