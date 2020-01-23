@@ -181,12 +181,22 @@ final class MakeGrid extends AbstractMaker
         }
 
         $fieldData = [];
-        $fieldData['type'] = $io->choice('Enter the field type', $this->gridHelper->getFilterIds(), 'string');
+        $fieldData['type'] = $io->choice('Enter the field type', ['string', 'datetime', 'twig'], 'string');
         $fieldData['label'] = $io->ask('Enter the field label', null);
         $isSortable = $io->confirm('Is the field sortable?', true);
 
         if ($isSortable) {
             $fieldData['sortable'] = $io->ask('Enter the sortable path (leave blank to set the default value)', null);
+        }
+
+        if ('twig' === $fieldData['type']) {
+            $fieldData['options'] = [];
+            $fieldData['options']['template'] = $io->ask('Enter the twig template path', null);
+        }
+
+        if ('datetime' === $fieldData['type']) {
+            $fieldData['options'] = [];
+            $fieldData['options']['format'] = $io->ask('Enter the date format', 'Y-m-d H:i:s');
         }
 
         return [
