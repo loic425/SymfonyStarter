@@ -17,4 +17,5 @@ App\Entity\Customer\Customer:
                 summary: Register a new customer resource.
                 description: Customer resource response
     itemOperations:
-        get: ~
+        get:
+            security: 'is_granted("ROLE_NO_ACCESS")'
