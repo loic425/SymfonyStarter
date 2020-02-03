@@ -15,6 +15,7 @@ use App\Entity\User\AppUserInterface;
 use Doctrine\ORM\Mapping as ORM;
 use Sylius\Component\Customer\Model\Customer as BaseCustomer;
 use Sylius\Component\User\Model\UserInterface;
+use Symfony\Component\Serializer\Annotation as Serializer;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -29,6 +30,8 @@ class Customer extends BaseCustomer implements CustomerInterface
      * @ORM\OneToOne(targetEntity="App\Entity\User\AppUser", mappedBy="customer", cascade={"persist"})
      *
      * @Assert\Valid
+     *
+     * @Serializer\Groups({"customer:read:default", "customer:read:detailed", "customer:write"})
      */
     private $user;
 

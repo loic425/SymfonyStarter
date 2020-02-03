@@ -1,0 +1,19 @@
+{
+    "user": {
+        "id": @integer@,
+        "username": "marty.mcfly@future.com",
+        "usernameCanonical": "marty.mcfly@future.com",
+        "roles": [
+            "ROLE_USER"
+        ],
+        "enabled": false
+    },
+    "id": @integer@,
+    "email": "marty.mcfly@future.com",
+    "emailCanonical": "marty.mcfly@future.com",
+    "firstName": "Marty",
+    "lastName": "McFly",
+    "birthday": null,
+    "gender": "u",
+    "group": null
+}

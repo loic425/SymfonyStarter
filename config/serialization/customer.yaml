@@ -3,37 +3,37 @@ Sylius\Component\Customer\Model\Customer:
         id:
             expose: true
             type: integer
-            groups: [Default, Detailed, DetailedCart]
+            groups: [customer:read:default, customer:read:detailed]
         email:
             expose: true
             type: string
-            groups: [Default, Detailed, DetailedCart, Write]
+            groups: [customer:read:default, customer:read:detailed, customer:write]
         emailCanonical:
             expose: true
             type: string
-            groups: [Detailed]
+            groups: [customer:read:detailed]
         firstName:
             expose: true
             type: string
-            groups: [Default, Detailed, DetailedCart, Write]
+            groups: [customer:read:default, customer:read:detailed, customer:write]
         lastName:
             expose: true
             type: string
-            groups: [Default, Detailed, DetailedCart, Write]
+            groups: [customer:read:default, customer:read:detailed, customer:write]
         gender:
             expose: true
             type: string
-            groups: [Detailed, Write]
+            groups: [customer:read:detailed, customer:write]
         birthday:
             expose: true
             type: DateTime
-            groups: [Detailed, Write]
+            groups: [customer:read:detailed, customer:write]
         group:
             expose: true
-            groups: [Detailed]
+            groups: [customer:read:detailed]
         phoneNumber:
             expose: true
-            groups: [Write]
+            groups: [customer:write]
         subscribedToNewsletter:
             expose: true
-            groups: [Write]
+            groups: [customer:write]

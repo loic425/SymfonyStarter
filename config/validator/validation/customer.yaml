@@ -1,0 +1,8 @@
+# Uncomment to customize validation groups for the customer resource
+# You can not remove the existing validation group "sylius", use your custom one instead.
+#Sylius\Component\Customer\Model\Customer:
+#    properties:
+#        password:
+#            - Length:
+#                  min: 7
+#                  groups: ['registration']

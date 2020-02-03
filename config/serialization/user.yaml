@@ -3,28 +3,28 @@ Sylius\Component\User\Model\User:
         id:
             expose: true
             type: integer
-            groups: [Default, Detailed, DetailedCart]
+            groups: [user:read:default, user:read:detailed]
         username:
             expose: true
             type: string
-            groups: [Default, Detailed, DetailedCart, Secured, Write]
+            groups: [user:read:default, user:read:detailed, user:write]
         usernameCanonical:
             expose: true
             type: string
-            groups: [Detailed, DetailedCart]
+            groups: [user:read:detailed]
         email:
-            expose: true
+            expose: false
             type: string
-            groups: [Default, Detailed, DetailedCart, Write]
         emailCanonical:
-            expose: true
+            expose: false
             type: string
-            groups: [Detailed, DetailedCart]
         enabled:
             expose: true
             type: boolean
-            groups: [Default, Detailed]
+            groups: [user:read:default, user:read:detailed]
+        plainPassword:
+            groups: [user:write]
         roles:
             expose: true
             type: array
-            groups: [Detailed]
+            groups: [user:read:detailed]
