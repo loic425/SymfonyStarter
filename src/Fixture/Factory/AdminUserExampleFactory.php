@@ -12,6 +12,8 @@
 namespace App\Fixture\Factory;
 
 use App\Entity\User\AdminUserInterface;
+use Monofony\Bundle\CoreBundle\Fixture\Factory\AbstractExampleFactory;
+use Monofony\Bundle\CoreBundle\Fixture\Factory\ExampleFactoryInterface;
 use Sylius\Component\Resource\Factory\FactoryInterface;
 use Symfony\Component\OptionsResolver\Options;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -75,7 +77,7 @@ class AdminUserExampleFactory extends AbstractExampleFactory implements ExampleF
     /**
      * {@inheritdoc}
      */
-    protected function configureOptions(OptionsResolver $resolver)
+    protected function configureOptions(OptionsResolver $resolver): void
     {
         $resolver
             ->setDefault('email', function (Options $options) {

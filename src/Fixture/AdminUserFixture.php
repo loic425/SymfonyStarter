@@ -11,6 +11,7 @@
 
 namespace App\Fixture;
 
+use Monofony\Bundle\CoreBundle\Fixture\AbstractResourceFixture;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 
 class AdminUserFixture extends AbstractResourceFixture
@@ -26,7 +27,7 @@ class AdminUserFixture extends AbstractResourceFixture
     /**
      * {@inheritdoc}
      */
-    protected function configureResourceNode(ArrayNodeDefinition $resourceNode)
+    protected function configureResourceNode(ArrayNodeDefinition $resourceNode): void
     {
         $resourceNode
             ->children()

@@ -13,10 +13,12 @@ namespace App\Fixture\Factory;
 
 use FOS\OAuthServerBundle\Model\ClientInterface;
 use FOS\OAuthServerBundle\Model\ClientManagerInterface;
+use Monofony\Bundle\CoreBundle\Fixture\Factory\AbstractExampleFactory;
+use Monofony\Bundle\CoreBundle\Fixture\Factory\ExampleFactoryInterface;
 use Symfony\Component\OptionsResolver\Options;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class ApiClientExampleFactory extends AbstractExampleFactory
+class ApiClientExampleFactory extends AbstractExampleFactory implements ExampleFactoryInterface
 {
     /** @var ClientManagerInterface */
     private $clientManager;

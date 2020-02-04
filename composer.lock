@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "61c49324a992d435d29b2dc8fbe7766f",
+    "content-hash": "28ecf0266eb2552e94247f1f9ab867b9",
     "packages": [
         {
             "name": "api-platform/api-pack",
@@ -3049,6 +3049,72 @@
                 "transformation"
             ],
             "time": "2019-10-04T05:45:14+00:00"
+        },
+        {
+            "name": "monofony/monofony",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Monofony/Monofony.git",
+                "reference": "87fe1ae44fb24d0a2b1ac4f564907d2253860801"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Monofony/Monofony/zipball/87fe1ae44fb24d0a2b1ac4f564907d2253860801",
+                "reference": "87fe1ae44fb24d0a2b1ac4f564907d2253860801",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2",
+                "swiftmailer/swiftmailer": "^6.2",
+                "sylius/fixtures-bundle": "^1.4",
+                "sylius/resource-bundle": "^1.6",
+                "sylius/ui-bundle": "^1.6",
+                "symfony/config": "4.4.*",
+                "symfony/flex": "^1.6"
+            },
+            "conflict": {
+                "symfony/symfony": "*",
+                "symplify/package-builder": "^7.2",
+                "symplify/smart-file-system": "^7.2"
+            },
+            "require-dev": {
+                "behat/behat": "^3.2",
+                "behat/mink-browserkit-driver": "^1.3",
+                "behat/mink-extension": "^2.2",
+                "behat/mink-selenium2-driver": "^1.3",
+                "friends-of-behat/page-object-extension": "^0.3.1",
+                "friends-of-behat/symfony-extension": "^2.0",
+                "friends-of-behat/variadic-extension": "^1.2",
+                "friendsofphp/php-cs-fixer": "^2.12",
+                "phpspec/phpspec": "^6.1",
+                "phpstan/phpstan": "^0.11",
+                "symplify/easy-coding-standard": "^6.0||^7.0",
+                "vimeo/psalm": "^3.8"
+            },
+            "type": "project",
+            "extra": {
+                "symfony": {
+                    "allow-contrib": true,
+                    "require": "4.4.*"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monofony\\Tests\\Behat\\": "src/tests/Behat/",
+                    "Monofony\\Bundle\\": "src/Bundle/",
+                    "Monofony\\Component\\": "src/Component/"
+                },
+                "exclude-from-classmap": [
+                    "src/Monofony/*/*/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Starter project for Symfony projects using Sylius internals",
+            "time": "2020-01-31T22:37:56+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -15017,6 +15083,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "monofony/monofony": 20,
         "behat/mink": 20
     },
     "prefer-stable": true,
