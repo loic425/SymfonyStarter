@@ -37,7 +37,9 @@ final class RegistrationApiTest extends JsonApiTestCase
         }
 EOT;
 
-        $this->client->request('POST', '/api/customers/register', [], [], ['CONTENT_TYPE' => 'application/ld+json'], $data);
+        $this->client->request('POST', '/api/customers/register', [], [], [
+            'CONTENT_TYPE' => 'application/json',
+        ], $data);
 
         $response = $this->client->getResponse();
         $this->assertResponse($response, 'customer/register_response', Response::HTTP_CREATED);
@@ -66,7 +68,9 @@ EOT;
         }
 EOT;
 
-        $this->client->request('POST', '/api/customers/register', [], [], ['CONTENT_TYPE' => 'application/ld+json'], $data);
+        $this->client->request('POST', '/api/customers/register', [], [], [
+            'CONTENT_TYPE' => 'application/json',
+        ], $data);
 
         $response = $this->client->getResponse();
         $this->assertResponse($response, 'customer/register_with_existing_email_response', Response::HTTP_BAD_REQUEST);

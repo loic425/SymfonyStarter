@@ -1,18 +1,18 @@
 App\Entity\Customer\Customer:
     attributes:
         validation_groups: ["Default", "sylius"]
+        denormalization_context:
+            groups: ["customer:write", "user:write"]
+        normalization_context:
+            groups:
+                - "customer:read:default"
+                - "customer:read:detailed"
+                - "user:read:default"
+                - "user:read:detailed"
     collectionOperations:
         register:
             method: POST
             path: /customers/register
-            denormalization_context:
-                groups: ["customer:write", "user:write"]
-            normalization_context:
-                groups:
-                    - "customer:read:default"
-                    - "customer:read:detailed"
-                    - "user:read:default"
-                    - "user:read:detailed"
             openapi_context:
                 summary: Register a new customer resource.
                 description: Customer resource response
