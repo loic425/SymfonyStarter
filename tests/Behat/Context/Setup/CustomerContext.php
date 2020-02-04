@@ -17,7 +17,7 @@ use App\Entity\Customer\CustomerInterface;
 use App\Entity\User\AppUserInterface;
 use Behat\Behat\Context\Context;
 use Doctrine\Common\Persistence\ObjectManager;
-use App\Tests\Behat\Service\SharedStorageInterface;
+use Monofony\Tests\Behat\Service\SharedStorageInterface;
 use Sylius\Component\Resource\Factory\FactoryInterface;
 use Sylius\Component\Resource\Repository\RepositoryInterface;
 

@@ -16,8 +16,8 @@ namespace App\Tests\Behat\Context\Ui\Backend;
 use Behat\Behat\Context\Context;
 use App\Tests\Behat\Page\Backend\Customer\IndexPage;
 use App\Tests\Behat\Page\Backend\Customer\UpdatePage;
-use App\Tests\Behat\Service\Resolver\CurrentPageResolverInterface;
 use App\Entity\Customer\CustomerInterface;
+use Monofony\Tests\Behat\Service\Resolver\CurrentPageResolverInterface;
 use Webmozart\Assert\Assert;
 
 final class ManagingCustomersContext implements Context

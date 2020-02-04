@@ -13,9 +13,9 @@ declare(strict_types=1);
 
 namespace App\Tests\Behat\Page\Backend;
 
-use App\Tests\Behat\Service\Accessor\TableAccessorInterface;
 use Behat\Mink\Session;
 use FriendsOfBehat\PageObjectExtension\Page\SymfonyPage;
+use Monofony\Tests\Behat\Service\Accessor\TableAccessorInterface;
 use Symfony\Component\Routing\RouterInterface;
 
 class DashboardPage extends SymfonyPage

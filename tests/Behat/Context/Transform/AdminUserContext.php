@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace App\Tests\Behat\Context\Transform;
 
 use App\Entity\User\AdminUserInterface;
-use App\Tests\Behat\Service\SharedStorageInterface;
+use Monofony\Tests\Behat\Service\SharedStorageInterface;
 use Behat\Behat\Context\Context;
 
 final class AdminUserContext implements Context

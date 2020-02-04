@@ -11,7 +11,7 @@
 
 namespace App\Tests\Behat\Context\Transform;
 
-use App\Tests\Behat\Service\SharedStorageInterface;
+use Monofony\Tests\Behat\Service\SharedStorageInterface;
 use App\Formatter\StringInflector;
 use Behat\Behat\Context\Context;
 

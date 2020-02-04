@@ -19,8 +19,8 @@ services:
 
     App\Tests\Behat\Context\Setup\AdminSecurityContext:
         arguments:
-            $securityService: "@app.behat.admin_security"
+            $securityService: '@monofony.behat.admin_security'
 
     App\Tests\Behat\Context\Setup\AppSecurityContext:
         arguments:
-            $securityService: "@app.behat.app_security"
+            $securityService: '@monofony.behat.app_security'

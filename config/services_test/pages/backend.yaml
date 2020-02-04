@@ -19,7 +19,7 @@ services:
           abstract: true
           public: false
           arguments:
-              - "@app.behat.table_accessor"
+              - "@monofony.behat.table_accessor"
 
       app.behat.page.backend.crud.create:
           class: App\Tests\Behat\Page\Backend\Crud\CreatePage

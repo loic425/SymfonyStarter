@@ -11,11 +11,10 @@
 
 namespace App\Tests\Behat\Context\Setup;
 
-use App\Tests\Behat\Service\SecurityServiceInterface;
-use App\Tests\Behat\Service\SharedStorageInterface;
-use App\Entity\User;
+use Monofony\Tests\Behat\Service\SharedStorageInterface;
 use App\Fixture\Factory\AdminUserExampleFactory;
 use Behat\Behat\Context\Context;
+use Monofony\Tests\Behat\Service\SecurityServiceInterface;
 use Sylius\Component\User\Model\UserInterface;
 use Sylius\Component\User\Repository\UserRepositoryInterface;
 use Webmozart\Assert\Assert;
