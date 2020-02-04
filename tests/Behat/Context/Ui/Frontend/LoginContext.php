@@ -15,11 +15,11 @@ namespace App\Tests\Behat\Context\Ui\Frontend;
 
 use App\Tests\Behat\Page\Frontend\Account\ResetPasswordPage;
 use Behat\Behat\Context\Context;
-use App\Tests\Behat\NotificationType;
 use App\Tests\Behat\Page\Frontend\Account\LoginPage;
 use App\Tests\Behat\Page\Frontend\Account\RegisterPage;
 use App\Tests\Behat\Page\Frontend\Account\RequestPasswordResetPage;
 use App\Tests\Behat\Page\Frontend\HomePage;
+use Monofony\Tests\Behat\NotificationType;
 use Monofony\Tests\Behat\Service\NotificationCheckerInterface;
 use Monofony\Tests\Behat\Service\Resolver\CurrentPageResolverInterface;
 use Sylius\Component\User\Model\UserInterface;

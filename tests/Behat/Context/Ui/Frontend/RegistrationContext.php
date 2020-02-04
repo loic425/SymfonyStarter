@@ -15,13 +15,13 @@ namespace App\Tests\Behat\Context\Ui\Frontend;
 
 use App\Entity\Customer\CustomerInterface;
 use Behat\Behat\Context\Context;
-use App\Tests\Behat\NotificationType;
 use App\Tests\Behat\Page\Frontend\Account\DashboardPage;
 use App\Tests\Behat\Page\Frontend\Account\LoginPage;
 use App\Tests\Behat\Page\Frontend\Account\ProfileUpdatePage;
 use App\Tests\Behat\Page\Frontend\Account\RegisterPage;
 use App\Tests\Behat\Page\Frontend\Account\VerificationPage;
 use App\Tests\Behat\Page\Frontend\HomePage;
+use Monofony\Tests\Behat\NotificationType;
 use Monofony\Tests\Behat\Service\SharedStorageInterface;
 use Monofony\Tests\Behat\Service\NotificationCheckerInterface;
 use Sylius\Component\User\Model\UserInterface;

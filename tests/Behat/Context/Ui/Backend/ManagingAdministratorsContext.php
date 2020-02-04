@@ -14,11 +14,11 @@ declare(strict_types=1);
 namespace App\Tests\Behat\Context\Ui\Backend;
 
 use App\Tests\Behat\Element\Backend\TopBarElement;
-use App\Tests\Behat\NotificationType;
 use App\Tests\Behat\Page\Backend\Administrator\CreatePage;
 use App\Tests\Behat\Page\Backend\Administrator\UpdatePage;
 use App\Tests\Behat\Page\Backend\Administrator\IndexPage;
 use App\Entity\User\AdminUserInterface;
+use Monofony\Tests\Behat\NotificationType;
 use Monofony\Tests\Behat\Service\SharedStorageInterface;
 use Behat\Behat\Context\Context;
 use Doctrine\Common\Persistence\ObjectManager;

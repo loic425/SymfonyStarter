@@ -14,7 +14,7 @@ namespace App\Tests\Behat\Page\Backend\Crud;
 use Behat\Mink\Exception\ElementNotFoundException;
 use Behat\Mink\Session;
 use FriendsOfBehat\PageObjectExtension\Page\SymfonyPage;
-use App\Tests\Behat\Service\Accessor\TableAccessorInterface;
+use Monofony\Tests\Behat\Service\Accessor\TableAccessorInterface;
 use Symfony\Component\Routing\RouterInterface;
 use Webmozart\Assert\Assert;
 

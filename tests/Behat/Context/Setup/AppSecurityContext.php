@@ -11,7 +11,7 @@
 
 namespace App\Tests\Behat\Context\Setup;
 
-use App\Tests\Behat\Service\SecurityServiceInterface;
+use Monofony\Tests\Behat\Service\SecurityServiceInterface;
 use Monofony\Tests\Behat\Service\SharedStorageInterface;
 use App\Entity\User\AppUserInterface;
 use App\Fixture\Factory\AdminUserExampleFactory;
