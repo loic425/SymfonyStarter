@@ -3057,12 +3057,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Monofony/Monofony.git",
-                "reference": "c0f07277adcab3abbb5072f7781c61aa9d6f1649"
+                "reference": "1734f03d38485825e2555d85c19da1ee57e50816"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Monofony/Monofony/zipball/c0f07277adcab3abbb5072f7781c61aa9d6f1649",
-                "reference": "c0f07277adcab3abbb5072f7781c61aa9d6f1649",
+                "url": "https://api.github.com/repos/Monofony/Monofony/zipball/1734f03d38485825e2555d85c19da1ee57e50816",
+                "reference": "1734f03d38485825e2555d85c19da1ee57e50816",
                 "shasum": ""
             },
             "require": {
@@ -3116,7 +3116,7 @@
                 "MIT"
             ],
             "description": "Starter project for Symfony projects using Sylius internals",
-            "time": "2020-02-04T14:42:36+00:00"
+            "time": "2020-02-04T15:09:34+00:00"
         },
         {
             "name": "monolog/monolog",
